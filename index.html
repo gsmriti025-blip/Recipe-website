@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>RECIPEE APP</h1>
+            <form>
+                <input type="text" placeholder="Search for a recipe..." class="searchBox">
+                <button class="searchBtn">SEARCH</button>
+                <button class="favorite">FAVORITE</button>
+            </form>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <div class="recipe-container">
+                <h2>Search your Favorite Recipe</h2>
+                </div>
+                <div class="recipe-details">
+                    <button type="button" class="recipe-close-btn">
+                        <i class ="fas fa-times"></i>
+                    </button>
+                    <div class="recipe-details-content">
+                    </div>
+                </div>
+            </div>
+            <div class="spinner" style="display: none"></div>
+        </section>
+    </main>
+
+    <!-- Favourite Recipes Popup -->
+     <div class="favorite-popup" style="display: none">
+        <button type="button" class="favorite-popup-close-btn">
+            <i class="fas fa-times"></i>
+        </button>
+        <div class="favorite-recipes-container"></div>
+     </div>
+
+    <!--login-->
+    
+    <div class="login-popup" id="login-popup" style="display: none">
+        <h2>LOGIN</h2>
+        <form id="login-form">
+            <label for=" login-username">Username:</label>
+            <input type="text" id="login-username" required/>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required/>
+            <button type="submit">LOGIN</button>
+            </form>
+            <button id="show-signup">SIGN UP</button>
+    </div>
+
+    <!--signup-->
+
+    <div class="signup-popup" id="signup-popup" style="display: none">
+        <h2>SIGN UP</h2>
+        <form id="signup-form">
+            <label for="signup-username">Username:</label>
+            <input type="text" id="signup-username" required/>
+            <label for="signup-password">Password:</label>
+            <input type="password" id="signup-password" required/>
+            <button type="submit">SIGN UP</button>
+            </form>
+            <button id="show-login">LOGIN</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
